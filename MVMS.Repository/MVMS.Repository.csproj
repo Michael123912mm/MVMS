@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MVMS.DBEngine\MVMS.DBEngine.csproj" />
+    <ProjectReference Include="..\MVMS.Framework\MVMS.Framework.csproj" />
+    <ProjectReference Include="..\MVMS.Models\MVMS.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+</Project>
