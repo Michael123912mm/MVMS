@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVMS.Framework
 {
-    internal class MessageCatalog
+    public class MessageCatalog
     {
     }
 }
