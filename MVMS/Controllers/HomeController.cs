@@ -12,7 +12,39 @@ namespace MVMS.Controllers
         {
             _logger = logger;
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Team()
+        {
+            return View();
+        }
 
+        public IActionResult NewTeam()
+        {
+            return View();
+        }
+        public IActionResult Rooms()
+        {
+            return View();
+        }
+        public IActionResult Booking()
+        {
+            return View();
+        }
+        public IActionResult AddRooms()
+        {
+            return View();
+        }
+        public IActionResult AddBooking()
+        {
+            return View();
+        }
+        public IActionResult Report()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

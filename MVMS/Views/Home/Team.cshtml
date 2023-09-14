@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenants Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        td p {
+            margin: -0.3rem;
+            font-size: 0.9rem;
+        }
+
+        table tr td {
+            padding: 0.5rem !important;
+        }
+
+        aside.main-sidebar {
+            background-color: #05445E;
+            color: #ddd;
+        }
+
+        nav ul li a p {
+            color: #ddd;
+        }
+
+        nav ul li a i {
+            color: #ddd;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="content-wrapper" style=" min-height: 593.4px; min-width: 1250px; margin-left :60px">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark"><span class="fa fa-user-tie"></span> Tenants</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li class="breadcrumb-item active">Tenants</li>
+                        </ol>
+                    </div>
+                    <a class="btn btn-sm elevation-2" asp-controller="Home" asp-action="NewTeam" style="margin-top: 20px;margin-left: 10px;background-color: #05445E;color: #ddd;">
+                        <i class="fa fa-user-plus"></i>
+                        Add New
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="card card-info elevation-2">
+                    <br>
+                    <div class="col-md-12 table-responsive">
+                        <table id="example1" class="table table-bordered table-hover">
+                            <thead class="btn-cancel">
+                                <tr>
+                                    <th>Profile</th>
+                                    <th>Tenant Info</th>
+                                    <th>Address</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="../assets/img/profile.png" width="50" alt="User Image"></td>
+                                    <td>
+                                        <p class="info">Name: <b>James Andress</b></p>
+                                        <p class="info"><small>Contact: <b>098733526171</b></small></p>
+                                        <p class="info"><small>Email: <b>james@gmail.com</b></small></p>
+                                    </td>
+                                    <td>Pasig, Metro Manila</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#edit">
+                                            <i class="fa fa-user-edit"></i>
+                                        </a>
+                                        <a class="btn btn-sm btn-danger" href="#" data-toggle="modal" data-target="#delete">
+                                            <i class="fa fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/img/profile.png" width="50" alt="User Image"></td>
+                                    <td>
+                                        <p class="info">Name: <b>John Doe</b></p>
+                                        <p class="info"><small>Contact: <b>098733526171</b></small></p>
+                                        <p class="info"><small>Email: <b>john@gmail.com</b></small></p>
+                                    </td>
+                                    <td>Makati, Metro Manila</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#edit">
+                                            <i class="fa fa-user-edit"></i>
+                                        </a>
+                                        <a class="btn btn-sm btn-danger" href="#" data-toggle="modal" data-target="#delete">
+                                            <i class="fa fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/img/profile.png" width="50" alt="User Image"></td>
+                                    <td>
+                                        <p class="info">Name: <b>Juan Luna</b></p>
+                                        <p class="info"><small>Contact: <b>098733526171</b></small></p>
+                                        <p class="info"><small>Email: <b>juan@gmail.com</b></small></p>
+                                    </td>
+                                    <td>Mandaluyong, Metro Manila</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#edit">
+                                            <i class="fa fa-user-edit"></i>
+                                        </a>
+                                        <a class="btn btn-sm btn-danger" href="#" data-toggle="modal" data-target="#delete">
+                                            <i class="fa fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div id="delete" class="modal animated rubberBand delete-modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="../assets/img/sent.png" alt="" width="50" height="46">
+                    <h3>Are you sure want to delete this Operator?</h3>
+                    <div class="m-t-20">
+                        <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
