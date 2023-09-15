@@ -59,11 +59,23 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a asp-controller="Home" asp-action="Index" class="brand-link">
-                <img src="../assets/img/logo1.png" alt="Logo" width="200" style="margin-bottom:-120px;margin-top:-50px"
+            @*<a asp-controller="Home" asp-action="Index" class="brand-link">
+                
+                <img src="~/assets/img/logo1.png" alt="Logo" width="200" style="margin-bottom:-110px;margin-top:-50px"
                      style="opacity: .8">
-            </a>
+            </a>*@
 
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Index" class="nav-link">
+                       
+                        <h1 style="margin-left:30px">
+                            MVMS
+                        </h1>
+                    </a>
+                </li>
+                </ul>
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar Menu -->
