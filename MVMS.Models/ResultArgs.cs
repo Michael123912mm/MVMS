@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MVMS.Models
 {
-    internal class ResultArgs
+    public class ResultArgs
     {
+        public Int64 StatusCode { get; set; }
+        public string? StatusMessage { get; set; }
+        public object? ResultData { get; set; }
     }
 }
