@@ -34,7 +34,7 @@ namespace MVMS.DBEngine
         {
             get
             {
-                var sqlconnection = new SqlConnection(_configuration.GetConnectionString("ConnString"));
+                var sqlconnection = new SqlConnection(_configuration.GetConnectionString("ConString"));
                 return sqlconnection;
             }
         }
