@@ -24,7 +24,9 @@ namespace MVMS.API
             services.AddTransient<ITeamRepository, TeamRepository>();
             services.AddTransient<ITeamDetailServices, TeamDetailServices>();
 
-
+            //RoomDetails
+            services.AddTransient<IMeetingRoomRepository, MeetingRoomRepository>();
+            services.AddTransient<IMeetingRoomServices, MeetingRoomServices>();
 
             services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

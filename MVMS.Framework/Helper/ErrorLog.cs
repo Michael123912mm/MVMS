@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVMS.Framework.Helper
 {
-    internal class ErrorLog
+    public class ErrorLog
     {
     }
 }

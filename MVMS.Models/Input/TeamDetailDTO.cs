@@ -13,4 +13,13 @@ namespace MVMS.Models.Input
         public string? TeamName { get; set; }
         public string? TeamMember { get; set; }
     }
+    public class MeetingRoomlDTO
+    {
+        public int? RoomId { get; set; }
+        public string? RoomNo { get; set; }
+        public string? Capacity { get; set; }
+        public string? Location { get; set; }
+        public string? Amenities { get; set; }
+    
+     }
 }

@@ -13,4 +13,10 @@ namespace MVMS.Models.Output
 
         public List<TeamDetailDTO>? TeamDetailList { get; set; }
     }
+    public class MeetingRoomResul
+    {
+        public MeetingRoomlDTO? MeetingRoomDetail { get; set; }
+
+        public List<MeetingRoomlDTO>? MeetingRoomlList { get; set; }
+    }
 }
