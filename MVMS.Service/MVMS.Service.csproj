@@ -11,9 +11,4 @@
     <ProjectReference Include="..\MVMS.Repository\MVMS.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Service\" />
-  </ItemGroup>
-
 </Project>

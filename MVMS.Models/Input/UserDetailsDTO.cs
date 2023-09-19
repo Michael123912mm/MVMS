@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVMS.Models.Input
 {
-    internal class ClassDTO
+    internal class UserDetailsDTO
     {
     }
 }
